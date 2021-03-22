@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 500px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #333645;
+  color: #e8e8e8;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #505568;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+li > span:first-child:hover {
+  cursor: pointer;
+  color: #9370db;
+}
+
+li > button {
+  background: none;
+  border: none;
+  color: #ff3333;
+  outline: none;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.todoMain__inputContainer {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.todoMain__inputContainer > input {
+  flex: 0.8;
+  padding: 20px;
+  outline: none;
+  border: none;
+  background-color: #464b5e;
+  color: #e8e8e8;
+  font-size: 15px;
+}
+
+.todoMain__inputContainer > button {
+  flex: 0.2;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: #8357c6;
+  color: #e8e8e8;
+  font-size: 16px;
+}
+
+#todoSave {
+  display: none;
+  flex: 0.2;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#todoList {
+  background-color: #464b5e;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 13px;
+}
